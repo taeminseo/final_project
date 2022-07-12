@@ -18,13 +18,13 @@ public class MailConfig {
 		jms.setHost("smtp.gmail.com");
 		// 포트번호
 		jms.setPort(587);
-		jms.setUsername("ydh312@gmail.com");
-		jms.setPassword("thdwldms1!");
+		jms.setUsername("taeminseo@naver.com");
+		jms.setPassword("비밀번호");
 		
 		Properties pro = new Properties();
 		pro.setProperty("mail.trasport.protocol", "smtp");
 		pro.setProperty("mail.smtp.auth", "true");
-		// startTLS : 암호화 이용할거니? 응
+		// startTLS : 암호화 이용할거
 		pro.setProperty("mail.smtp.starttls.enable", "true");
 		jms.setJavaMailProperties(pro);
 		
