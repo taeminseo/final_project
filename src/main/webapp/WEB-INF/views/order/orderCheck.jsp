@@ -229,7 +229,7 @@ var ordertest;
 function iamport(){
 	alert("결제진행");
 		//가맹점 식별코드
-		IMP.init('imp58963495');
+		IMP.init('iamport 식별코드!');
 		IMP.request_pay({
 		    pg : 'kakaopay',
 		    pay_method : 'card',
