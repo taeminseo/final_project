@@ -82,14 +82,14 @@ public class MemberService implements IMemberService{
 		}else
 			return "로그인 실패";
 	}
-	//https://developers.kakao.com/docs/latest/ko/kakaologin/rest-api#refresh-token
+	
 			public String getAccessToken (String code) {
 				String accessToken = "";
 				String reqURL = "https://kauth.kakao.com/oauth/token";
 				try {
 					String sendMessage = "grant_type=authorization_code" 
-							+ "&client_id=0a0fe4745d35741aff2b1845c224700a"
-							+"&redirect_uri=http://localhost:8085/kakaoLogin" 
+							+ "&client_id=카카오 client id"
+							+"&redirect_uri=카카오 redirect uri" 
 							+ "&code=" + code;
 				
 					URL url = new URL(reqURL); // POST 요청에 필요로 요구하는 파라미터 스트림을 통해 전송
@@ -112,17 +112,7 @@ public class MemberService implements IMemberService{
 					while ((line = br.readLine()) != null) {
 						result += line;
 					}
-	/*
-	response body : 
-	{
-	"access_token":"bVNhfCi9cWzt9sKzgmiaT5YQvy4DZI-hChcxVQo9c5sAAAGAbc6Yzw",
-	"token_type":"bearer",
-	"refresh_token":"CjnYSnj_dlOtK7lfekkkRcFnlMrVHXp3bbmk9Qo9c5sAAAGAbc6YzQ",
-	"expires_in":21599,
-	"scope":"profile_nickname",
-	"refresh_token_expires_in":5183999
-	}				
-	 */
+	
 					System.out.println("response body : " + result);
 					System.out.println("result.split : " + result.split(","));
 					
@@ -139,7 +129,7 @@ public class MemberService implements IMemberService{
 				return accessToken;
 			}
 			
-			//https://developers.kakao.com/docs/latest/ko/kakaologin/rest-api#req-user-info
+			
 			public HashMap<String, Object> getUserInfo (String accessToken) {
 			    HashMap<String, Object> userInfo = new HashMap<String, Object>();
 			    String reqURL = "https://kapi.kakao.com/v2/user/me";
@@ -162,15 +152,7 @@ public class MemberService implements IMemberService{
 			            result += line;
 			        }
 			        System.out.println("response body : " + result);
-	/*
-	response body : 
-	{
-	"id":2220039319,
-	"connected_at":"2022-04-28T01:34:58Z",
-	"properties":{"nickname":"김연수"},
-	"kakao_account":{"profile_nickname_needs_agreement":false,"profile":{"nickname":"김연수"}}
-	}
-	 */
+	
 			        JsonElement element = JsonParser.parseString(result);
 //			        JsonObject properties = element.getAsJsonObject().get("properties").getAsJsonObject();
 //			        String nickname = properties.getAsJsonObject().get("nickname").getAsString();
