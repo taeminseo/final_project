@@ -1,10 +1,13 @@
 # Final_Project
 Spring을 이용한 요기요 클론코딩 사이트
 
-<h3> 개발 기간 </h3>
-2022.5.24 ~ 2022.6.22
+## 개발 기간 
+2022.5.24 ~ 2022.6.22 (30일)
 
-<h3> 개발 도구 </h3>
+## 프로젝트 진행 인원
+4명
+
+## tool 
 <div>
   <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white">
   <img src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white">
@@ -13,11 +16,12 @@ Spring을 이용한 요기요 클론코딩 사이트
   <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 </div>
 
-<h3> 개발 언어 </h3>
+## language 
 <div>
   <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white">
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
   <img src="https://img.shields.io/badge/css-DA1F26?style=for-the-badge&logo=csst&logoColor=white">
 </div>
 
-#
+
+
