@@ -1,4 +1,4 @@
-# Final_Project
+## Project
 Spring을 이용한 요기요 클론코딩 사이트
 
 ## 개발 기간 
